@@ -74,9 +74,10 @@
        display:grid;
        justify-content: center;
        
-      grid-template-columns: 22% 22% 22% 22%;
+       grid-template-columns: 22% 22% 22% 22%;
        grid-column-gap: 3rem;
        grid-row-gap: 3rem;
+       
      }
        .box{
         
@@ -123,25 +124,60 @@
        .box26{ background-color: #555 ;}
        .box27{ background-color: #242526;}
        .box28{ background-color:#ccc;}
-       .box29{ background-color: ;}
-       .box30{ background-color: ;}
-       .box31{ background-color: ;}
-       .box32{ background-color: ;}
-       .box33{ background-color: ;}
-       .box34{ background-color: ;}
-       .box35{ background-color: ;}
-       .box36{ background-color: ;}
-       .box37{ background-color: ;}
-       .box37{ background-color: ;}
-       .box38{ background-color: ;}
-       .box39{ background-color: ;}
-       .box40{ background-color: ;}
-       .box41{ background-color: ;}
-       .box42{ background-color: ;}
-       .box43{ background-color: ;}
-
-
-
-      
      
+
+
       
+         /*-------------------------
+        Large Device
+    -------------------------*/
+         @media (min-width: 992px) and (max-width: 1199px) {
+    
+           .boxes {
+             grid-template-columns: 22% 22% 22% 22%;
+            
+    
+           }
+    
+         }
+    
+         /*-------------------------
+    Medium Device
+    -------------------------*/
+         @media (min-width: 600px) and (max-width: 991px) {
+    
+           .boxes {
+             grid-template-columns: 30% 30% 30%;
+            
+    
+           }
+    
+    
+         }
+    
+         /*-------------------------
+    small tab
+    -------------------------*/
+         @media (min-width: 600px) and (max-width: 767px) {
+           
+           .boxes {
+             grid-template-columns: 48% 48%;
+             
+           }
+    
+         }
+      
+
+/*-------------------------
+Extra small Device 
+-------------------------*/
+@media (min-width:300px) and (max-width: 599px) {
+.boxes{
+  grid-template-columns: 48% 48%;
+ grid-column-gap: 2rem;
+ grid-row-gap: 2rem;
+ 
+ margin-top: 30px;
+
+
+}   
