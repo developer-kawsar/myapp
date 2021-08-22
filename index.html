@@ -9,6 +9,15 @@
     <style>
     *{
         box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #preloader{
+      height: 100vh;
+      width: 100%;
+      position: fixed;
+      background: red;
     }
     html{
         font-size: 10px;
@@ -20,7 +29,7 @@
         align-items: center;
     }
         section{
-            height: 122rem;
+            height: 100vh;
             width: 48rem;
             border: 1px solid gray;
             font-size: 2rem;
@@ -93,18 +102,13 @@
     }
     </style>
 </head>
-<body>
+<body onload="preloaderFun()">
+  <div id="preloader">
+    
+  </div>
     <section>
         <header>
-           <div class="select">
-            <select name="" id="">
-                <option value="">one</option>
-                <option value="">one</option>
-                <option value="">one</option>
-                <option value="">one</option>
-                <option value="">one</option>
-            </select>
-           </div>
+      
          </header>
            <main> 
                 <div class="buttons">
@@ -158,7 +162,12 @@
                 </div>
            </main>
     </section>
-    
+    <script type="text/javascript" charset="utf-8">
+      var preloader =document.getElementById("preloader");
+      function preloaderFun(){
+        preloader.style.display="none"
+      }
+    </script>
   
 </body>
 </html>
